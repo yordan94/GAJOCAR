@@ -5,10 +5,21 @@
  */
 package Business;
 
+import Domain.Automovil;
+import Entidad.AutoData;
+
 /**
  *
  * @author yordan
  */
 public class UsuarioController {
+
+    public UsuarioController() {
+    }
     
+    public boolean InsertarAuto(Automovil auto){
+        AutoData autoData = new AutoData();
+        autoData.insertarAuto(auto);
+        return true;
+    }//InsertarAuto
 }

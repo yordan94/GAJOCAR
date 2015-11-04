@@ -20,8 +20,22 @@ public class AutoData {
         automoviles = new LinkedList<Automovil>();
     }
     
-    public void insertarAuto(Automovil auto){
+    public boolean insertarAuto(Automovil auto){
         automoviles.push(auto);
-        JOptionPane.showMessageDialog(null, "Automovil ingresado con éxito");
+        System.out.println(toString());
+        return true;
     }
+
+    @Override
+    public String toString() {
+        String mensaje = "\n\nLista de carros\n\n";
+        for(int i=0; i<automoviles.size(); i++){
+            mensaje += "Marca: "+ automoviles.get(i).getMarca();
+            mensaje += "\nModelo: "+ automoviles.get(i).getModelo();
+            mensaje += "\nPrecio: "+ automoviles.get(i).getPrecioRenta();
+        }
+        return mensaje;
+    }
+    
+    
 }
