@@ -6,7 +6,9 @@
 package Business;
 
 import Domain.Automovil;
+import Domain.Cliente;
 import Entidad.AutoData;
+import Entidad.ClienteData;
 
 /**
  *
@@ -20,6 +22,12 @@ public class UsuarioController {
     public boolean InsertarAuto(Automovil auto){
         AutoData autoData = new AutoData();
         autoData.insertarAuto(auto);
+        return true;
+    }//InsertarAuto
+    
+    public boolean InsertarCliente(Cliente cliente){
+        ClienteData clienteData = new ClienteData();
+        clienteData.insertarCliente(cliente);
         return true;
     }//InsertarAuto
 }

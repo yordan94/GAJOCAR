@@ -7,7 +7,6 @@ package Entidad;
 
 import Domain.Automovil;
 import java.util.LinkedList;
-import javax.swing.JOptionPane;
 
 /**
  *

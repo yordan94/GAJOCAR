@@ -7,9 +7,10 @@ package Domain;
 
 /**
  *
- * @author yordan
+ * @author francisco
  */
 public class Cliente {
+    
     private String nombre;
     private String apellidos;
     private String cedula;

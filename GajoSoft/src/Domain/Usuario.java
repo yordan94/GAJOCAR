@@ -10,6 +10,7 @@ package Domain;
  * @author yordan
  */
 public class Usuario {
+    
     private String correo;
     private String password;
     private String nombre;

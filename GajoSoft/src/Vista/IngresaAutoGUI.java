@@ -78,6 +78,11 @@ public class IngresaAutoGUI extends javax.swing.JFrame {
                 jbnIngresarMouseClicked(evt);
             }
         });
+        jbnIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbnIngresarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -173,6 +178,10 @@ public class IngresaAutoGUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Error!");
         }
     }//GEN-LAST:event_jbnIngresarMouseClicked
+
+    private void jbnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbnIngresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbnIngresarActionPerformed
 
     /**
      * @param args the command line arguments
